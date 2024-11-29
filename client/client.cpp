@@ -12,7 +12,7 @@ int main(void)
     const int SERVER_PORT_NUM = 1234;
     const short BUFF_SIZE = 1024;
     int erStat;
-    in_addr ip_to_num;
+    in_addr ip_to_num; 
     inet_pton(AF_INET, SERVER_IP, &ip_to_num);
     WSADATA wsData;
     erStat = WSAStartup(MAKEWORD(2, 2), &wsData);
